@@ -236,12 +236,15 @@ footer span{
     width: 97%;
     margin: 0;
   }
+  .other{
+    padding: 0 15%
+  }
   .list{
     display: block;
   }
   .text{
     top: 35px;
-    margin-left: -24%;
+    margin-left: -28%;
   }
   .text h2{
     margin: 2px 0;
