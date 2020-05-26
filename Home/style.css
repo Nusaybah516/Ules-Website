@@ -36,7 +36,7 @@ nav{
   }
   
   header{
-    background-image: url(.../images/146.jpg);
+    background-image: url(/images/146.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -79,7 +79,7 @@ nav{
     width: 350px;
     height: 150px;
     margin-left: 6%;
-    background-image: url(.../images/IMG-20200507-WA0081.jpg);
+    background-image: url(/images/IMG-20200507-WA0081.jpg);
     background-size: cover;
     background-position: right;
     background-repeat:  no-repeat;
