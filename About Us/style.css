@@ -213,6 +213,9 @@ footer span{
 
 
 @media screen and (max-width: 650px){
+  nav{
+    padding: 20px 8%;
+   } 
   nav ul,.imgs{
     display: none;
   }
