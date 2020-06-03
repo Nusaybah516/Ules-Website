@@ -1,0 +1,449 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    border-top: 1px solid rgb(187, 187, 187);
+    color: rgb(143, 138, 138);
+    padding: 1em 0;
+}
+
+/* Specific styles  */
+
+/* Menu bar */
+#menu-bar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 1em;
+    width: 85%;
+}
+
+#menu-bar nav {
+    min-width: 380px;
+    width: 60%;
+}
+
+#menu-bar ul {
+    height: 100%;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#logo {
+    margin-bottom: 1em;
+}
+
+#menu-bar .dropdown-list {
+    position: absolute;
+    top: 12.5%;
+}
+
+#menu-bar .dropdown-list a {
+    padding: 0.5em 1.5em;
+}
+
+#menu-bar .dropdown-list a:nth-child(odd) {
+    background-color: rgb(8, 34, 119);
+}
+
+#menu-bar .dropdown-list a:nth-child(even) {
+    background-color: rgb(92, 143, 255);
+}
+
+/* Classes */
+.current-page {
+    border-bottom: 2px solid rgb(14, 175, 14);
+}
+
+.current-page a {
+    color: rgb(14, 175, 14);
+    display: block;
+}
+
+.dropdown-list a::before {
+    content: '\25C2';
+}
+
+/* Hamburger section */
+#hamburger {
+    cursor: pointer;
+    display: none;
+}
+
+#hamburger-section {
+    background-color: rgb(35, 26, 75);
+    display: none;
+    line-height: 1.5;
+    margin: 1em 0;
+    padding: 1em 0;
+    text-align: center;
+}
+
+#hamburger-section a,
+.dropdown-list a {
+    color: rgb(255, 255, 255);
+}
+
+#hamburger-section a:active {
+    text-decoration: underline;
+}
+
+/* Introduction */
+#intro-section {
+    background-color: rgb(35, 26, 75);
+    color: rgb(255, 255, 255);
+    padding: 5em 0;
+}
+
+#intro-section div {
+    margin: 0 auto;
+    width: 85%;
+}
+
+#intro-section h2 {
+    font-weight: 300;
+}
+
+#intro-section p {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 1em;
+}
+
+/* Excos section */
+#excos-section {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 85%;
+}
+
+#excos-section figure {
+    margin: 0.5em;
+    min-width: 150px;
+    width: 32%;
+}
+
+#excos-section figcaption {
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(14, 175, 14);
+    margin: 0 auto;
+    margin-top: -3.5em;
+    padding: 1em;
+    width: 80%;
+}
+
+#excos-section .social-media {
+    display: none;
+}
+
+#excos-section figcaption:hover {
+    background-color: rgb(14, 175, 14);
+    transition: background-color 0.5s ease-in;
+}
+
+#excos-section figcaption:hover p {
+    display: none;
+}
+
+#excos-section figcaption:hover .social-media {
+    display: flex;
+}
+
+/* Classes */
+.exco-image {
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+
+.role {
+    font-weight: 500;
+    margin: 0.2em 0;
+}
+
+.social-media {
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.social-media a {
+    color: rgb(0, 0, 0);
+}
+
+/* Senior team section */
+#senior-team {
+    background-color: rgb(231, 226, 226);
+    padding: 3em 0;
+}
+
+#senior-team h3 {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+#team {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 85%;
+}
+
+#team figure {
+    background-color: rgb(255, 255, 255);
+    margin: 1em 0.5em;
+    min-width: 150px;
+    max-width: 300px;
+    width: 32%;
+}
+
+#team figcaption {
+    padding: 1em;
+}
+
+#team img {
+    width: 100%;
+}
+
+#vc {
+    border-left: 1px solid rgb(128, 128, 128);
+    border-right: 1px solid rgb(128, 128, 128);
+}
+
+#degrees {
+    font-size: 0.85rem;
+    margin: 0.5em 0;
+}
+
+/* FAQ section */
+#faq-section > div {
+    align-items: center;
+    margin: 3em auto;
+    width: 90%;
+}
+
+#faq-section h3 {
+    margin: 3em 0;
+    text-align: center;
+}
+
+/* Classes */
+.faq {
+    border: 2px solid rgb(34, 104, 255);
+    margin: 0 auto;
+    max-width: 900px;
+    width: 75%;
+}
+
+.faq hr {
+    border: 1.2px solid rgb(34, 104, 255);
+}
+
+.faq div {
+    justify-content: space-between;
+    padding: 1.2em 0.3em;
+}
+
+.faq p {
+    width: 95%;
+}
+
+/* Alumni section */
+#alumni-section {
+    background-image: url('./images/474.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 5em;;
+    width: 100%;
+}
+
+#alumni-section h4 {
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 4em;
+    padding-top: 3em;
+    text-align: center;
+}
+
+#alumni {
+    align-items: flex-end;
+    background-color: rgb(255, 255, 255);
+    bottom: -3.5em;
+    box-shadow: 0px 0px 10px rgb(155, 152, 152);
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 3em;
+    position: relative;
+    width: 70%;
+}
+
+#alumni-pres {
+    min-width: 65px;
+    max-width: 100px;
+    width: 30%;
+}
+
+#alumni-pres img {
+    border-radius: 100%;
+    width: 100%;
+}
+
+#alumni-text {
+    flex-grow: 2;
+    width: 70%;
+    margin: 0 1.5em;
+}
+
+#alumni-text h5 {
+    font-size: 1.4rem;
+}
+
+#alumni-text p.role {
+    color: rgb(139, 139, 139);
+}
+
+#alumni-text div {
+    margin: 1em 0;
+}
+
+#alumni-text a {
+    color: rgb(0, 0, 0);
+    margin-right: 2em;
+}
+
+#alumni-images {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#alumni-images img {
+    border-radius: 100%;
+    width: 30px;
+}
+
+/* Classes */
+.quote-mark {
+    flex-basis: 100%;
+    color: rgb(14, 175, 14);
+}
+
+.arrows {
+    flex-basis: 100%;
+    margin-top: 1.5em;
+    text-align: right;
+}
+
+/* Footer section */
+#footer-section {
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    margin: 0 auto;
+    width: 90%;
+}
+
+#footer-left {
+    align-items: center;
+}
+
+#footer-left figure {
+    margin-right: 1em;
+}
+
+#footer-right {
+    align-items: center;
+    justify-content: space-between;
+    width: 15%;
+}
+
+#footer-right a {
+    color: rgb(128, 128, 128);
+}
+
+#footer-right a:hover {
+    color: rgb(0, 0, 0);
+}
+
+/* General classes */
+.flex {
+    display: flex;
+}
+
+.flex-item {
+    flex-basis: 100%;
+}
+
+.gray {
+    color: rgb(59, 59, 59);
+}
+
+.bar {
+    border: 1.2px solid rgb(40, 238, 40);
+    display: inline-block;
+    margin-left: 0.7em;
+    vertical-align: middle;
+    width: 50px;
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+    border: 2px solid rgb(14, 175, 14);
+    border-radius: 100%;
+    color: rgb(14, 175, 14);
+    margin: 0 0.35em;
+    padding: 0.6em 0.3em;
+}
+
+/* Media queries for different screeen sizes */
+@media only screen and (max-width: 800px) {
+    #alumni {
+        width: 95%;
+    }
+
+    .social-media {
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    html {
+        font-size: 12px;
+    }
+
+    #nav-bar {
+        display: none;
+    }
+
+    #hamburger {
+        align-self: center;
+        display: block;
+    }
+
+    #hamburger-section {
+        font-size: 1.4rem;
+    }
+
+    #alumni-section {
+        background-image: url('./images/474-mobile.jpg');
+    }
+}
