@@ -257,6 +257,9 @@ footer div .fab:hover {
 		height: 40px;
 		margin-left: 0px;
 	}
+	.navbar {
+		display:none;
+	}
 	.navbar ul li {
 		flex: 20%;
 		padding: 10px;
@@ -413,6 +416,9 @@ footer div .fab:hover {
 		width: 40px;
 		height: 40px;
 		margin-left: 0px;
+	}
+	.navbar {
+		display:none;
 	}
 	.navbar ul li {
 		flex: 20%;
