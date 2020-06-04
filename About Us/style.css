@@ -21,7 +21,7 @@ p{
 /*Navigation Bar*/
 nav{
   display: flex;
-  padding: 0 8%;
+  padding: 0px 8%;
   background-color: white;
 }
 #logo{
@@ -29,14 +29,15 @@ nav{
   width: 50px;
 }
 nav ul{
-  padding: 0;
   margin: auto;
   margin-right: 0;
 }
 nav ul li{
+  padding: 16px 0;
   list-style: none;
   display: inline-block;
-  margin: 0 10px;
+  font-size: 13px;
+  margin: 0 17px;
   line-height: 3;
   color: black;
   font-weight: 300;
