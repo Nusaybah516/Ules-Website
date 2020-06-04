@@ -80,3 +80,4 @@ About page: https://nusaybah516.github.io/Ules-Website/About/
 
 
 
+Gallery: https://nusaybah516.github.io/Ules-Website/Gallery/
