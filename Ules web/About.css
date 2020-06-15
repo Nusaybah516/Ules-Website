@@ -1,0 +1,280 @@
+body{
+    margin: 0;
+    font-family: 'Questrial', sans-serif;
+  }
+  h2{
+    font-weight: 300;
+    display: inline-block
+  }
+  hr{
+    width: 83px;
+    display: inline-block;
+    border: 2px solid #81ca00;
+    margin: 10px;
+    vertical-align: sub;
+  }
+  p{
+    line-height: 1.5;
+    color: #bdbdbd;;
+  }
+  
+  /*Navigation Bar*/
+  nav{
+    display: flex;
+    padding: 0px 8%;
+    background-color: white;
+  }
+  #logo{
+    margin: auto 0;
+    width: 50px;
+  }
+  nav ul{
+    margin: auto;
+    margin-right: 0;
+  }
+  nav ul li{
+    padding: 16px 0;
+    list-style: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 0 17px;
+    line-height: 3;
+    color: black;
+    font-weight: 300;
+    cursor: pointer;
+  }
+  /*Active Page*/
+  #about{
+    color: #81ca00;
+    border-bottom: 2px solid #81ca00;
+  }
+  
+  /*Header*/
+  header{
+    background-color: #09203a;
+    color: white;
+    padding: 8%;
+    overflow-wrap: break-word;
+  }
+  header h1{
+    font-size: 50px;
+    font-weight: 400;
+  }
+  
+  /*Main*/
+  main{
+    padding: 5% 8%;
+  }
+  main .landing{
+    width: 70%;
+  }
+  .landing p{
+    width: 80%;
+  }
+  
+  .list{
+    padding: 10% 0 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .dept{
+    width: 47%;
+    padding-left: 7%;
+  }
+  .glance{
+    background-color: #00aaff;
+    color: white;
+    padding: 20px;
+    width: 40%;
+    height: fit-content;
+  }
+  /*The Read more button*/
+  .glance a{
+    text-align: center;
+    display: block;
+    margin-top: 50px;
+    padding: 30px 0;
+    font-style: italic;
+  }
+  .glance li{
+    margin: 32px 0;
+    line-height: 1.5;
+  }
+  .glance hr{
+    border-color: white;
+  }
+  .glance h2{
+    margin: 20px 0 auto 40px;
+  }
+  .dept hr,.other hr{
+    margin-left: 0;
+  }
+  .other{
+    padding: 15%;
+  }
+  .other div{
+    padding: 3% 0;
+  }
+  .other h2,.dept h2{
+    display: block;
+  }
+  /*Testimonals*/
+  .testimonals{
+    position: relative;
+    margin-bottom: 20%;
+    background-color: black;
+  }
+  #banner{
+    opacity: 0.5;
+  }
+  .text{
+    position: absolute;
+    z-index: 2;
+    top: 103px;
+    left: 50%;
+    margin-left: -13%;
+    color: #fff;
+  }
+  .testimonals img{
+    width: 100%;
+    height: 720px;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .main-test img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin: auto;
+  }
+  .main-test{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: white;
+    margin: 0 13%;
+    padding: 5%;
+    position: absolute;
+    top: 350px;
+    grid-gap: 20px;
+    box-shadow: 0 0 20px 7px #94949494;
+  }
+  .details{
+    grid-column: 2/5;
+  }
+  .details i{
+    font-size: 6vw;
+    color: #81ca00;
+  }
+  .details p{
+    color: gray;
+  }
+  .details section i,footer section i{
+    color:#bdbdbd;
+    font-size: unset;
+    margin-right: 50px;
+    cursor: pointer;
+  }
+  .details section i:hover,footer section i:hover{
+    color: black;
+  }
+  .imgs img{
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: auto;
+    padding: 78% 0;
+  }
+  .move{
+    position: absolute;
+    right: 5%;
+    bottom: 7%;
+  }
+  .move i{
+    font-size: 30px;
+    margin-right: 30px;
+    color: #81ca00;
+  }
+  /*Footer*/
+  footer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px 8%;
+    border-top: 2px solid #bdbdbd;
+  }
+  footer section{
+    grid-column: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer span{
+    margin: auto;
+    color: #bdbdbd;
+  }
+  
+  
+  @media screen and (max-width: 650px){
+    nav{
+      padding: 10px 8%;
+     } 
+    nav ul,.imgs{
+      display: none;
+    }
+    header p, p{
+      font-size: 12px;
+    }
+    .landing p,
+    .glance{
+      width: 100%;
+      padding: 0;
+    }
+   
+    main .landing,.dept{
+      width: 70%;
+      padding: 0 15%;
+    }
+    main{
+      padding: 0;
+    }
+    hr{
+      width: 97%;
+      margin: 0;
+    }
+    .other{
+      padding: 0 15%
+    }
+    .list{
+      display: block;
+    }
+    .text{
+      top: 35px;
+      margin-left: -28%;
+    }
+    .text h2{
+      margin: 2px 0;
+    }
+    .main-test{
+      top: 20%;
+      display: block;
+    }
+    .main-test img {
+      display: block;
+      width: 50%;
+    }
+    .move {
+      position: relative;
+      text-align: end;
+      margin: 21% 0 0;
+      right: 0;
+  }
+    
+  
+    footer{
+      display: block;
+    }
+    footer span{
+      float: right;
+      margin-top: 15px;
+    }
+    
+  }
